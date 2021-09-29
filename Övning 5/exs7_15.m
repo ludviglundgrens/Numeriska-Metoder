@@ -69,7 +69,6 @@ plot(0, mean(intervall), "x")
 
 function a = ypp(x, y, yp)    
     g = @(y) y*exp( 4*(1-y)/(1+0.2*(1-y)) );
-    
     if x == 0
         a = g(y) / 3;
     else
